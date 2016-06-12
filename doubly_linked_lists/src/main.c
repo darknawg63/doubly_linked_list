@@ -1,7 +1,8 @@
 #include "output.h"
 #include "mutator.h"
 
-int main(void)
+int 
+main(void)
 {
   Node* head = NULL;
   head = node_push(head, 7);

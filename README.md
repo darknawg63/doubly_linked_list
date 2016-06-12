@@ -1,4 +1,4 @@
-# Data Structures: Doubly Linked Lists
+# Data Structures
 
 This practice code is based on the course ["Strong programming foundations"](https://www.youtube.com/channel/UClEEsT7DkdVO_fkrBw0OTrA)
 by [mycodeschool.com](http://www.mycodeschool.com/).
