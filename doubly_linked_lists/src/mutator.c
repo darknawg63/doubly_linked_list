@@ -108,14 +108,28 @@ node_delete(Node* head, int x)
   return head;
 }
 
-void node_free(Node* head)
+void 
+node_free(Node* head)
 {
-    Node *next,*curr;
-    curr = head;
-    while (curr != NULL)
+  Node *next,*curr;
+  curr = head;
+  while (curr != NULL)
     {
-       next = curr -> next;
-       free(curr);
-       curr = next;
+      next = curr -> next;
+      free(curr);
+      curr = next;
     }
+}
+
+Node* node_set(Node* head, int x, int n)
+{
+  Node* curr = head;
+  int i;
+
+  for (i = 0; i < n-1; i++)
+    curr = curr->next;
+
+  curr->data = x;
+
+  return head;
 }

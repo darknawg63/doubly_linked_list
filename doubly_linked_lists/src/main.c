@@ -12,6 +12,7 @@ main(void)
 //  head = node_insert(head, 6, 5);
 //  head = node_insert(head, 2, 2);
   head = node_delete(head, 2);
+  head = node_set(head, 15, 2);
   node_print(head, 1, 3);
   node_free(head);
 
