@@ -14,6 +14,7 @@ main(void)
   head = node_delete(head, 2);
   head = node_set(head, 15, 2);
   node_print(head, 1, 3);
+  node_print_wide(head);
   node_free(head);
 
   return 0;

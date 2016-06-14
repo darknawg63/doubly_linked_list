@@ -80,7 +80,7 @@ node_print_wide(Node* curr)
   while (curr != NULL)
     {
       printf("address [%p] | prev [%p] | data [%d] | next [%p]\n", 
-             curr, curr->prev, curr->data, curr->next);
+            (void*) curr, (void*) curr->prev, curr->data, (void*) curr->next);
       curr = curr->next;
     }
   printf("\n");
